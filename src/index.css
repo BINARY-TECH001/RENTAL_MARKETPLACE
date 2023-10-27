@@ -14,6 +14,35 @@
     --blue : #14213d;
     --yellow : #fca311;
     --white : #e5e5e5;
+
+
+    --textColor: #000;
+    --bg: white;
+    --logo: darkblue;
+    --bgSoft: #f6f3f3;
+    --textColorSoft: #555;  
+    --border: lightgray;
 }
+
+a{
+    text-decoration: none;
+}
+
+/* light:(
+    textColor: #000,
+    bg: white,
+    logo: darkblue,
+    bgSoft: #f6f3f3,
+    textColorSoft: #555,
+    border: lightgray,
+),
+dark:(
+    textColor: whitesmoke,
+    bg: #222,
+    logo: white,
+    bgSoft: #333,
+    textColorSoft: lightgray,
+    border: #444,
+), */
 
 

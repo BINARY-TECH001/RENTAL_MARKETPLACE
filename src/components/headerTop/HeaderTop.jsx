@@ -2,48 +2,42 @@ import React from 'react'
 import { langList } from '../../constant'
 import DropDown from '../dropDown/DropDown'
 import { FiPhone } from 'react-icons/fi'
+import { LiaUser } from 'react-icons/lia'
+import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import './HeaderTop.css'
 
 function HeaderTop() {
   return (
-    <div>
+    <div className='headerTop__container'>
       {/* Call start here*/}
       <div className="call">
-        <FiPhone />
+        <FiPhone className='icon' />
         <a href="tel:#"> Call: +234 9059 34366 02 </a>
       </div>
-      {/* Call ends here */}
 
-      {/* Login starts here */}
-      <div className="login">
-        <i>Icon</i>
+    <div className="otherInfo">
+    <div className="login">
+        <LiaUser className='icon' />
         <span> Login </span>
       </div>
-      {/* Login ends here */}
 
-      {/* Currency starts here */}
       <div className="currency">
         <span> USD </span>
-        <span> icon </span>
+        <MdOutlineKeyboardArrowDown className='icon' />
 
         <div className="displayOnHover">
           <a href="#"> Eur </a>
           <a href="#"> Usd </a>
         </div>
       </div>
-      {/* currency ends here */}
-
-      {/* Lang starts here */}
       <div className="lang">
         <span> ENG </span>
-        <span> icon </span>
+        <MdOutlineKeyboardArrowDown />
           {langList.map((lang) => (
               <DropDown list={lang} key={lang.id}/>
           ))}
       </div>
-      {/* currency ends here */}
-
-
+    </div>
     </div>
   )
 }

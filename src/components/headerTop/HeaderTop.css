@@ -1,0 +1,32 @@
+
+.headerTop__container{
+    height: 2em;
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.call{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call a, .icon{
+    color: var(--textColorSoft);
+    font-size: .64em;
+}
+
+.call .icon{
+    margin-top: .4em;
+    margin-right: .5em;
+}
+
+.otherInfo{
+    display: flex;
+    align-items: center;
+
+}
