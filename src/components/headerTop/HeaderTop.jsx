@@ -1,6 +1,7 @@
 import React from 'react'
 import { langList } from '../../constant'
 import DropDown from '../dropDown/DropDown'
+import { FiPhone } from 'react-icons/fi'
 import './HeaderTop.css'
 
 function HeaderTop() {
@@ -8,7 +9,7 @@ function HeaderTop() {
     <div>
       {/* Call start here*/}
       <div className="call">
-        <i>Icon</i>
+        <FiPhone />
         <a href="tel:#"> Call: +234 9059 34366 02 </a>
       </div>
       {/* Call ends here */}
