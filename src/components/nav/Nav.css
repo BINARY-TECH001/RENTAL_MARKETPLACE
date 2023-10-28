@@ -1,0 +1,49 @@
+.Nav__containerWrapper{
+    background-color: var(--blue);
+    width: 100%;
+    height: 3em;
+}
+
+.Nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories__container{
+    background-color: var(--yellow);
+    height: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .84em;
+    gap: 1.5em;
+}
+
+.categories__container span{
+    font-size: 1em;
+}
+
+.categories__container span, .icons{
+    color: var(--white);
+    font-size: 1.2em;
+}
+
+.link_container {
+    gap: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.link_container a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link_container a:hover{
+    border-bottom: .1em solid var(--yellow);
+}

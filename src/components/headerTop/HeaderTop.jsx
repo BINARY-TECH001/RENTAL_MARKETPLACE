@@ -1,43 +1,50 @@
-import React from 'react'
-import { langList } from '../../constant'
-import DropDown from '../dropDown/DropDown'
+import React, { useState } from 'react'
 import { FiPhone } from 'react-icons/fi'
 import { LiaUser } from 'react-icons/lia'
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import './HeaderTop.css'
 
 function HeaderTop() {
+  const [ dropDownVisible, setDropDownVisible ]= useState(false)
+  
+  const handleMouseEnterLang = () => {
+    setDropDownVisible(true)
+  }
+  const handleMouseLeaveLang = () => {
+    setDropDownVisible(false)
+  }
   return (
-    <div className='headerTop__container'>
-      {/* Call start here*/}
+    <div className='headerTop__wrapper headerTop__container'>
+      <div className="headerTop__container container">
       <div className="call">
-        <FiPhone className='icon' />
+        <FiPhone className='iconCall' />
         <a href="tel:#"> Call: +234 9059 34366 02 </a>
       </div>
 
     <div className="otherInfo">
     <div className="login">
         <LiaUser className='icon' />
-        <span> Login </span>
+        <a href='#'> Login </a>
       </div>
 
-      <div className="currency">
-        <span> USD </span>
+      <div className="lang"
+         onMouseEnter={handleMouseEnterLang}
+         onMouseLeave={handleMouseLeaveLang}
+      >
+        <a href='#'> ENG </a>
         <MdOutlineKeyboardArrowDown className='icon' />
-
-        <div className="displayOnHover">
-          <a href="#"> Eur </a>
-          <a href="#"> Usd </a>
-        </div>
-      </div>
-      <div className="lang">
-        <span> ENG </span>
-        <MdOutlineKeyboardArrowDown />
-          {langList.map((lang) => (
-              <DropDown list={lang} key={lang.id}/>
-          ))}
+            {dropDownVisible && (
+              <div className="langCon">
+                <a href="#"> English </a>
+                <a href="#"> French </a>
+                <a href="#"> Spanish </a>
+              </div>
+            )}
       </div>
     </div>
+
+      </div>
+      
     </div>
   )
 }

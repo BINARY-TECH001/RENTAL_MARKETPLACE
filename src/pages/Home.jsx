@@ -1,10 +1,11 @@
 import React from 'react'
-import { HeaderTop, Nav } from '../components'
+import { HeaderSearch, HeaderTop, Nav } from '../components'
 
 function Home() {
   return (
     <>
       <HeaderTop />
+      <HeaderSearch />
       <Nav />
     </>
   )

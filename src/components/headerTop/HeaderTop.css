@@ -1,14 +1,19 @@
 
 .headerTop__container{
-    height: 2em;
-    width: 100%;
-    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1em;
+    height: 2.3em;
+    background-color: var(--white);
 }
 
+.headerTop__wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 .call{
     display: flex;
     align-items: center;
@@ -17,16 +22,45 @@
 
 .call a, .icon{
     color: var(--textColorSoft);
-    font-size: .64em;
+    font-size: .7em;
 }
 
-.call .icon{
+.call .iconCall{
     margin-top: .4em;
     margin-right: .5em;
+    font-size: .9em;
 }
 
 .otherInfo{
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
 
+.otherInfo a, .icon{
+    font-size: .8em;
+    color: var(--textColorSoft);
+}
+.lang{
+    position: relative;
+}
+
+.langCon{
+    background: var(--white);
+    color: var(--logo);
+    padding: .4em;
+    border-radius: .2em;
+    font-size: 1em;
+    position: absolute;
+    gap: .5em;
+    align-items: center;
+    z-index: 9;
+    width: 4em;
+    right: 0;  
+    transition: all 1s ease-in-out; 
+}
+
+.langCon a{
+    color: var(--blue);
 }
