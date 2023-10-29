@@ -281,4 +281,19 @@ const langList = [
 ]
 
 
-export { categoriesData, langList }
+const sliderData = [
+    {
+        id: 1,
+        image: "../assets/demo-13/banners/banner-1.jpg",
+    },
+    {
+        id: 2,
+        image: "../assets/demo-13/banners/banner-2.jpg",
+    },
+    {
+        id: 3,
+        image: "../assets/demo-13/banners/banner-3.jpg",
+    }
+]
+
+export { categoriesData, langList, sliderData }

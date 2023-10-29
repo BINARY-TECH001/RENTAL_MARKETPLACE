@@ -45,10 +45,10 @@ const HeaderSearch = () => {
             <BiShuffle className='icon' />
             <div className="heart__container">
                 <FiHeart className='icon' />
-                <spam className="num"> 2 </spam>
+                <span className="num"> 2 </span>
             </div>
             <div className="heart__container">
-                <LiaShoppingCartSolid className='icon' />
+                <LiaShoppingCartSolid className='cart' />
                 <span className="num"> 2 </span>
             </div>
         </div>

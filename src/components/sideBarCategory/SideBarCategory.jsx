@@ -1,9 +1,10 @@
 import React from 'react'
+import './sideBar.css'
 
 const SideBarCategory = () => {
   return (
-    <div>
-      
+    <div className='sidebarCategory__wrapper'>
+      SideBarCategory
     </div>
   )
 }

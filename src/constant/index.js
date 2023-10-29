@@ -1,3 +1,3 @@
-import { categoriesData, langList } from "./List";
+import { categoriesData, langList, sliderData } from "./List";
 
-export { categoriesData, langList }
+export { categoriesData, langList, sliderData }

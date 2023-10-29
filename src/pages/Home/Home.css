@@ -1,0 +1,11 @@
+.Home__body{
+    display: flex;
+    margin-top: 2em;
+    width: 100%;
+}
+
+.home__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
