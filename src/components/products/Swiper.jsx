@@ -68,7 +68,7 @@ const Carousel = () => {
           </div>
         </div>
         <div className="swiper-slide">
-          <img src="image2.jpg" alt="Slide 2" />
+          <img src="../" alt="Slide 2" />
           <div className="slide-content">
             <h2>Slide 2 Title</h2>
             <p>Slide 2 Description goes here.</p>
