@@ -1,0 +1,47 @@
+import React from 'react'
+import './products.css'
+import img1 from '../../assets/images/banners/banner-7.jpg'
+import Category from './HomeCategory/Category'
+import Swiper from './HomeCaroousel/Swiper'
+
+const swiperList = [
+  {
+      id: 1,
+      image: img1,
+      title: "Amazing deal",
+      body: "Beautiful And well decorated building"
+  },
+  {
+      id: 2,
+      image: img1,
+      title: "Amazing deal",
+      body: "Beautiful And well decorated Shop"
+  },
+  {
+      id: 3,
+      image: img1,
+      title: "Amazing deal",
+      body: "Beautiful And well decorated Shop"
+  },
+  {
+      id: 4,
+      image: img1,
+      title: "Amazing deal",
+      body: "Beautiful And well decorated Shop"
+  },
+]
+
+const Products = () => {
+  return (
+    <div className='products__wrapper'>
+      <div className="slide__wrapper">
+      <Swiper slides={swiperList} />
+      
+      </div>
+
+      <Category />
+    </div>
+  )
+}
+
+export default Products

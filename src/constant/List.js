@@ -265,35 +265,35 @@ const categoriesData = [
 ] 
 
 
-const langList = [
+const ProductsCategoryList = [
     {
         id: 1,
-        name: 'English'
+        image: '../assets/demo-13/cats/cat-page/1.jpg'
     },
     {
         id: 2,
-        name: 'French'
+        image: '../assets/demo-13/cats/cat-page/2.jpg'
     },
     {
         id: 3,
-        name: 'Spanish'
+        image: '../assets/demo-13/cats/cat-page/3.jpg'
     }
 ]
-
-
-const sliderData = [
+const swiperList = [
     {
         id: 1,
-        image: "../assets/demo-13/banners/banner-1.jpg",
+        image: '../assets/images/banners/banner-7.jpg',
+        title: "Amazing deal",
+        body: "Beautiful And well decorated building"
     },
     {
         id: 2,
-        image: "../assets/demo-13/banners/banner-2.jpg",
+        image: '../assets/images/banners/banner-8.jpg',
+        title: "Amazing deal",
+        body: "Beautiful And well decorated Shop"
     },
-    {
-        id: 3,
-        image: "../assets/demo-13/banners/banner-3.jpg",
-    }
 ]
 
-export { categoriesData, langList, sliderData }
+
+
+export { categoriesData, ProductsCategoryList, swiperList }

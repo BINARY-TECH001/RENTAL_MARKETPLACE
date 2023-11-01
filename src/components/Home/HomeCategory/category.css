@@ -1,0 +1,28 @@
+.category__container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.category__container article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+}
+
+.category__container article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category__container article span{
+    font-size: .8em;
+    margin-top: 1em;
+    color: var(--textColorSoft);
+}

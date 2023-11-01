@@ -2,7 +2,8 @@ import HeaderTop from './headerTop/HeaderTop'
 import Nav from './nav/Nav'
 import HeaderSearch from './HeaderSearch/HeaderSearch'
 import SideBarCategory from './sideBarCategory/SideBarCategory'
-import Products from './products/Products'
+import Products from './Home/Products'
+import Card from './ProductCard/Card'
 
 
 export {
@@ -10,5 +11,6 @@ export {
     Nav,
     HeaderSearch,
     SideBarCategory,
-    Products
+    Products,
+    Card,
 }

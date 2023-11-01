@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import { HeaderSearch, HeaderTop, Nav, Products, SideBarCategory } from '../../components'
+import {  HeaderSearch, HeaderTop, Nav, Products, SideBarCategory } from '../../components'
 
 
 function Home() {
