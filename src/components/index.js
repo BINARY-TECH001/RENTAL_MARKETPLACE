@@ -4,7 +4,9 @@ import HeaderSearch from './HeaderSearch/HeaderSearch'
 import SideBarCategory from './sideBarCategory/SideBarCategory'
 import Products from './Home/Products'
 import Card from './ProductCard/Card'
-
+import NewsLetter from './NewsLetter/NewsLetter'
+import Footer from './Footer/Footer'
+import Benefit from './Benefits/Benefit'
 
 export {
     HeaderTop,
@@ -13,4 +15,7 @@ export {
     SideBarCategory,
     Products,
     Card,
+    NewsLetter,
+    Footer,
+    Benefit,
 }

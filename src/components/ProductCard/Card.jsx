@@ -4,17 +4,23 @@ import React from 'react'
 
 const Card = ({item}) => {
   return (
-    <div>
+    <div className='item__container'>
         {
-            item.map((item)=> {
+            item.map(({ id, name, price, review, cat, oldNew, color, image })=> {
                 return (
-                    <article className="item__container" key={item.id}>
+                    <article className="item__wrapper" key={id}>
                         <div className="image__container">
-                            <img src={item.image} alt="Product" />
+                            <img src={image} alt="Product" />
                             <button> Message Owner </button>
                         </div>
-                        <div className="details">
-                            <p> {item.title} </p>
+                        <div className="details__con">
+                            <p> { cat } </p>
+                            <p> { name } </p>
+                            <p> { price } </p>
+                            <p> Review: { review } </p>
+                        </div>
+                        <div className="Hover__container">
+                            <div className="oldNew" style={{color: {color}}} > {oldNew} </div>
                         </div>
                     </article>
                 )

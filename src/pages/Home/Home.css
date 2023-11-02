@@ -9,3 +9,17 @@
     align-items: center;
     justify-content: center;
 }
+
+
+.newsLetter__container{
+    background-color: var(--blue);
+    padding: 1em;
+}
+
+.benefits__container{
+    margin-top: 2em;
+}
+
+.footer__container{
+    margin-top: 2em;
+}

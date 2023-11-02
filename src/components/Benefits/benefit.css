@@ -1,0 +1,28 @@
+.content__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+
+.content__container .icon{
+    font-size: 2.1em;
+    color: var(--blue);
+}
+
+.content__info p:first-child{
+    color: var(--blue);
+    font-weight: 600;
+    letter-spacing: .8px;
+}
+
+.content__info p:last-child{
+    color: var(--textColorSoft);
+    font-size: .8em;
+}
+
+.under2em{
+    margin-top: 2em;
+}
